@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1.4-6</title>
+</head>
+<body>
+    <script>
+        //1.4-6 Написать программу, вычисляющую для некоторого момента времени, заданного часами и минутами (целые числа), угол в градусах между часовой и минутной стрелками. Ответ вывести в виде: «В момент h:m угол между стрелками равен d.». Вместо буквенных обозначений должны стоять конкретные целые числа.
+        let h = parseInt(prompt());
+        let m = parseInt(prompt());
+        let d = 30 * h + 0.5 * m - 6 * m;
+        alert("В момент" + h + ":" + m + "угол между стрелками равен" + d)
+    </script>
+</body>
+</html>
