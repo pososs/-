@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>bubblesort</title>
+</head>
+<body>
+    <button id="btn1">Click</button>
+    <button id="btn2">Show</button>
+    <textarea id="txt" placeholder="enter your data"></textarea>
+    <script>
+        let btn1 = document.getElementById('btn1');
+        let btn2 = document.getElementById('btn2');
+        let txt = document.getElementById('txt');
+        let marr = [];
+        let parr = [];
+        let sort
+        btn1.onclick = function() {
+            marr.push(txt.value);
+            txt.value = "";
+            addparr(parr);
+        }
+        btn2.onclick = function() {
+            bubblesort(marr)
+            console.log(marr)
+            console.log(parr)
+        }
+        function addparr(parr) {
+            for(let i = 0; i < marr.length; i++) {
+                if(txt.value == marr[i]) {
+                    for(let j = 0; j < parr.length; j++) {
+                        if(txt.value == parr[j]) {
+                            parr[j]++
+                        }
+                        else {
+                            parr.push()
+                        }
+                    }
+                }
+            }
+        }
+        function bubblesort(marr) {
+            for(let i = marr.length; i > 0; i--) {
+                for(let j = 1; j < marr.length; j++) {
+                    if(marr[j] < marr[j-1]) {
+                        let swapper = marr[j]
+                        marr[j] = marr[j - 1]
+                        marr[j - 1] = swapper
+                        sort = true
+                    }
+                    if(sort != true) {
+                        
+                    }
+                }
+            }
+        }
+    </script>
+</body>
+</html>
