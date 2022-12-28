@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>delitel</title>
+</head>
+<body>
+    <script type="text/javascript"> 
+        let number = prompt("Введите целое число")
+        sub = number 
+        let division
+        for(let i = 1; i <= number; i++){
+            sub=number 
+            console.log(i)
+            while (sub > 0) {
+                sub -=i
+                if (sub == 0)
+                console.log(i + "является делителем числа" + number)
+                if (sub < 0) 
+                console.log(i + "не является делителем числа" + number)
+                division = 1
+            }
+        }
+        console.log(division)
+        function smth(i){
+            let counter = 0
+            let sub
+            for(x = 1; x <= i; x++) {
+                sub = i
+                while(sub > 0) {
+                    sub -= x
+                    if (sub == 0)
+                    counter++
+                }
+            }
+            if (counter == 2) return true
+            if (counter > 2) return false
+        }  
+    </script>
+</body>
+</html>
