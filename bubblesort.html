@@ -45,9 +45,9 @@
             for(let i = marr.length; i > 0; i--) {
                 for(let j = 1; j < marr.length; j++) {
                     if(marr[j] < marr[j-1]) {
-                        let swapper = marr[j]
+                        let temp = marr[j]
                         marr[j] = marr[j - 1]
-                        marr[j - 1] = swapper
+                        marr[j - 1] = temp
                         sort = true
                     }
                     if(sort != true) {
